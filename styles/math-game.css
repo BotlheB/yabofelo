@@ -1,0 +1,197 @@
+/* === MATH GAMES PAGE === */
+
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(201, 92%, 46%);
+  background: linear-gradient(to right, #3596ec, hsl(183, 100%, 69%));
+  color: #222;
+  margin: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1e90ff;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0056b3;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+header {
+  background-color: #fff;
+  padding: 0.1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: hwb(0 2% 98%);
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+/* Logo Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between the logo and text */
+}
+
+.logo {
+  max-width: 50px; /* Adjust the size of the logo */
+  height: auto;
+}
+
+.logo-container h1 {
+  font-size: 1.5rem; /* Adjust the font size of the text */
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+main {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: hsl(0, 7%, 97%);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.game-card {
+  background: #fefcfcf2;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.game-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.game-card p {
+  font-size: 1rem;
+  color: #060000e4;
+  margin-bottom: 1.5rem;
+}
+
+.game-card a {
+  text-decoration: none;
+  color: hsl(221, 77%, 56%);
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Game Card Image Styling */
+.game-card img {
+  width: 100%;
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image is cropped proportionally */
+  border-radius: 8px; /* Adds rounded corners to the image */
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.game-card img:hover {
+  transform: scale(1.05);
+}
+
+game-card a:hover {
+  color: lab(30.9% 71.42 -96.02);
+}
+
+footer {
+  text-align: center;
+  padding: 0.1rem;
+  background-color:#fcfcfc;
+  margin-top: 4rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+  color: lch(1.92% 0 296.81);
+}
+footer a {
+  color: hsl(0, 0%, 2%); /* or any color you want */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #222; /* or any hover color you want */
+}

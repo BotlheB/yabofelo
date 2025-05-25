@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Practice subtraction skills with fun challenges.">
+  <title>Subtraction Game</title>
+  <link rel="stylesheet" href="../styles/game-style.css" />
+  <script defer src="../scripts/subtraction-game.js"></script>
+  <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+            <img src="../assets/edu_logo.png" alt="EduFun Logo" class="logo">
+            <h1>Subtraction Game</h1>
+        </div>
+    <nav>
+      <ul>
+       <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/math-games.html">Math Games</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>    
+               
+              </ul>
+    </nav>
+  </header>
+
+  <main class="game-container">
+    <p>Sharpen your subtraction skills! Solve as many as you can before time runs out.</p>
+    
+    <!-- Start Game Button -->
+  <button id="start-game">Start Game</button>
+
+
+  <!-- Game Area (Initially Hidden) -->
+  <section class="game-area" style="display: none;">
+    <div class="scoreboard">
+      <div>Score: <span id="score">0</span></div>
+      <div>Streak: <span id="streak">0</span></div>
+      <div>Time Left: <span id="timer">60</span>s</div>
+    </div>
+
+      <div id="question" class="question">What is ...?</div>
+      <input type="number" id="answer" placeholder="Your answer" />
+      <button id="submit-answer">Submit</button>
+      <div id="result" class="result"></div>
+    </section>
+    <div class="button-row">
+  <button id="restart-game">Restart Game</button>
+  <button class="back-button" onclick="window.location.href='../pages/math-games.html'">Back to Home</button>
+</div>
+
+    </main>
+
+  <footer>
+    <p>&copy; 2025 EduFun. All rights reserved.</p>
+    <ul>
+      <li><a href="https://twitter.com/EduFun" target="_blank">Twitter</a></li>
+      <li><a href="https://facebook.com/EduFun" target="_blank">Facebook</a></li>
+    </ul>
+  </footer>
+</body>
+</html>
